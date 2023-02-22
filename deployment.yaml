@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: webserver-simple
-        image: 889397717348.dkr.ecr.eu-west-1.amazonaws.com/html-server-image:v1
+        image: 889397717348.dkr.ecr.eu-west-1.amazonaws.com/ecr-tf:latest
         ports:
         - containerPort: 80
