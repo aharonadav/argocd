@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: html
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: html
   ports:
-      - nodePort: 80
-        protocol: TCP
-        port: 80
+      protocol: TCP
+      port: 80
