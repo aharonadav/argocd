@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: html
-  name: html
+    app: myapp
+  name: myapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: html
+      app: myapp
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: html
+        app: myapp
     spec:
       containers:
-      - image: 889397717348.dkr.ecr.eu-west-1.amazonaws.com/ecr-tf:v1
-        name: ecr-tf
+      - image: 889397717348.dkr.ecr.eu-west-1.amazonaws.com/test-1:test-tag-1
+        name: test-1
         resources: {}
 status: {}
