@@ -3,16 +3,16 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: myapp
-    app.kubernetes.io/instance: myapp
-  name: myapp
+    app: peakaya
+    app.kubernetes.io/instance: peakaya
+  name: peakaya
 spec:
   ports:
   - port: 4200
     protocol: TCP
     targetPort: 4200
   selector:
-    app: myapp
+    app: peakaya
   type: ClusterIP
 status:
   loadBalancer: {}

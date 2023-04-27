@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: myapp
-  name: myapp
+    app: peakaya
+  name: peakaya
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myapp
+      app: peakaya
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: myapp
+        app: peakaya
     spec:
       containers:
       - image: 889397717348.dkr.ecr.eu-west-1.amazonaws.com/test-1:test-tag-1
