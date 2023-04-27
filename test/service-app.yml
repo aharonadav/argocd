@@ -5,7 +5,7 @@ metadata:
   labels:
     app: peakaya
     app.kubernetes.io/instance: peakaya
-  name: peakaya
+  name: peakaya-service
 spec:
   ports:
   - port: 4200
